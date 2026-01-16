@@ -18,7 +18,7 @@ export function ProjectCard({
   demoUrl,
 }: ProjectCardProps) {
   return (
-    <article className="group rounded-xl border border-border bg-background/60 p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md">
+    <article className="rounded-xl border border-border bg-background/60 p-6 shadow-sm">
       <header className="space-y-3">
         <h3 className="text-xl font-semibold text-foreground">{title}</h3>
         <p className="text-sm text-muted-foreground">{description}</p>

@@ -3,61 +3,20 @@ import { ProjectCard } from "@/components/ProjectCard";
 
 const projects = [
   {
-    title: "Project A — Modern Booker App",
+    title: "Modern Booker App",
     description:
-      "A modern booking platform focused on a seamless multi-step flow and clean UI architecture.",
+      "A fully featured booking platform designed to make scheduling effortless through a clean multi-step flow, real-time availability logic, and a modular frontend architecture.",
     tech: ["React", "TypeScript", "Tailwind CSS"],
     bullets: [
-      "End-to-end booking flow (services → staff → time → confirmation).",
-      "Calendar logic with availability constraints and guardrails.",
-      "Admin dashboard for managing services, staff, and schedules.",
-      "Component architecture with reusable form building blocks.",
-      "Mobile-first, accessible design with consistent UX.",
+      "End-to-end booking experience including service selection, staff assignment, time-slot picking, and final confirmation.",
+      "Dynamic availability engine with guardrails (busy slots, staff availability, service duration rules).",
+      "Role-based admin dashboard for managing services, staff schedules, pricing and opening hours.",
+      "Reusable component architecture with form state management and validation built on controlled components.",
+      "Fast, mobile-first UI with accessible navigation, smooth transitions, and a consistent design system.",
     ],
-    githubUrl: "#",
-    demoUrl: "#",
-  },
-  {
-    title: "Project B — Portfolio v3",
-    description:
-      "A polished portfolio with animated sections, reusable UI blocks, and theme support.",
-    tech: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
-    bullets: [
-      "Composable UI sections with flexible layout presets.",
-      "Performance-optimized assets and lazy-loaded sections.",
-      "Smooth motion using lightweight animation utilities.",
-      "Dark/light themes with accessible color tokens.",
-    ],
-    githubUrl: "#",
-    demoUrl: "#",
-  },
-  {
-    title: "Project C — AI Tools Small Collection",
-    description:
-      "A set of lightweight AI utilities for content and script generation workflows.",
-    tech: ["TypeScript", "OpenAI API", "React"],
-    bullets: [
-      "Script generator and content assistant utilities.",
-      "Form UX tuned for quick iteration and repeatable prompts.",
-      "Typed API wrapper with retries and request guards.",
-      "Clear feedback states for loading, success, and errors.",
-    ],
-    githubUrl: "#",
-    demoUrl: "#",
-  },
-  {
-    title: "Project D — Misc React Apps",
-    description:
-      "A collection of focused React UI experiments for common product patterns.",
-    tech: ["React", "TypeScript", "Tailwind CSS"],
-    bullets: [
-      "Filtering and sorting UI with debounced inputs.",
-      "Pagination components with edge-case handling.",
-      "Dashboard widgets for metrics and insights.",
-    ],
-    githubUrl: "#",
-    demoUrl: "#",
-  },
+    githubUrl: "https://github.com/Marki10/booker",
+    demoUrl: "https://marki10.github.io/booker",
+  }
 ];
 
 export default function Projects() {
