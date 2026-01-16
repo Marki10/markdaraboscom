@@ -13,20 +13,26 @@ export function HeroSection() {
       <div className="container mx-auto max-w-5xl relative z-10 pointer-events-none">
         <div className="max-w-3xl">
           <p className="text-muted-foreground mb-4 tracking-wide uppercase text-sm">
-            Senior Web Developer
+            Senior Front-End Engineer | React, TypeScript, High-Performance UI
           </p>
           
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground mb-6 leading-[1.1]">
-            John Doe
+            Mark Darabos
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed max-w-2xl">
-            Senior Web Developer with 10+ years building scalable, accessible web platforms. 
-            I focus on architecture, performance, and mentoring teams.
+            I build scalable, high-quality web applications with a focus on performance, accessibility,
+            and clean architecture. With 10+ years of experience across frontend engineering and large-scale
+            platform operations, I bring both technical depth and product awareness to every project.
+          </p>
+
+          <p className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-2xl">
+            I’ve delivered data-driven interfaces, optimized complex UIs, and supported high-traffic systems
+            with strong debugging and reliability practices.
           </p>
           
           <div className="flex flex-wrap gap-3 mb-12">
-            {["Architecture", "Performance", "Mentorship", "Accessibility"].map((tag) => (
+            {["React", "TypeScript", "UI Architecture", "Performance", "Testing", "AWS", "Reliability"].map((tag) => (
               <span
                 key={tag}
                 className="px-3 py-1.5 text-sm border border-border rounded-full text-muted-foreground bg-background/80 backdrop-blur-sm"

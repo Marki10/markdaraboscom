@@ -1,38 +1,105 @@
 import { CaseStudyCard } from "./CaseStudyCard";
 import { FadeInSection } from "./FadeInSection";
 
-const caseStudies = [
+const experiences = [
   {
-    title: "E-commerce Platform Modernization",
-    company: "TechRetail Inc.",
-    year: "2023",
-    problem: "Legacy monolithic application couldn't scale for Black Friday traffic. Page load times exceeded 8 seconds, causing significant cart abandonment.",
-    constraints: "500k daily active users, 3-month deadline before peak season, team of 4 developers, couldn't afford downtime during migration.",
-    role: "Led the architecture redesign. Implemented incremental migration strategy using the strangler fig pattern. Mentored junior developers on React performance patterns.",
-    outcome: "Reduced page load to under 2 seconds. Zero downtime during migration. Platform handled 3x previous Black Friday traffic. Reduced infrastructure costs by 40%.",
-    technologies: ["React", "TypeScript", "Node.js", "PostgreSQL", "Redis", "AWS"],
+    company: "Incentive Games",
+    location: "Edinburgh, Scotland",
+    role: "Front-End Engineer",
+    period: "Apr 2019 – Sep 2025",
+    summary:
+      "A key contributor to building and maintaining web applications used by millions of players across global gaming clients.",
+    frontendEngineering: [
+      "Built and optimized UI components and frontend features in React/TypeScript for high-traffic applications.",
+      "Improved performance and responsiveness, reducing load times and enhancing user experience.",
+      "Collaborated with designers and backend teams to deliver consistent, accessible, user-focused interfaces.",
+      "Supported release cycles with regression testing, debugging, and rapid iteration on user-facing features.",
+    ],
+    platformReliability: [
+      "Helped monitor production behavior and resolve UI-related issues to ensure smooth player experience.",
+      "Improved visibility into frontend errors using monitoring tools (CloudWatch, Sentry, internal dashboards).",
+      "Built internal tools and automation scripts to streamline workflows and reduce manual effort for engineering teams.",
+    ],
+    collaboration: [
+      "Worked closely with distributed teams across the UK, Croatia, India, and the USA.",
+      "Mentored junior engineers and improved onboarding material for frontend contributors.",
+    ],
+    technologies: [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "Node.js",
+      "AWS (EC2/S3)",
+      "CI/CD",
+      "CloudWatch",
+      "Sentry",
+    ],
   },
   {
-    title: "Real-time Analytics Dashboard",
-    company: "FinanceFlow",
-    year: "2022",
-    problem: "Trading desk needed real-time visibility into market positions. Existing tools had 15-minute delay, causing missed opportunities and risk exposure.",
-    constraints: "Sub-second latency requirements, SOC 2 compliance, integration with 12 different data sources, small team with no prior WebSocket experience.",
-    role: "Designed the real-time data pipeline. Built the React visualization layer with optimized rendering for high-frequency updates. Established testing patterns for real-time systems.",
-    outcome: "Achieved 200ms average latency. Dashboard now serves 50+ traders daily. Contributed to $2M in recovered trading opportunities in first quarter.",
-    technologies: ["React", "D3.js", "WebSocket", "Kafka", "TimescaleDB", "Docker"],
+    company: "EPAM Systems",
+    location: "Szeged, Hungary",
+    role: "Software Engineer (Frontend & Platform Support)",
+    period: "Jan 2016 – Feb 2019",
+    summary:
+      "Worked on enterprise-scale web applications for finance and manufacturing clients, contributing to both frontend development and platform stability.",
+    frontendEngineering: [
+      "Developed and maintained UI components and internal tools used by global teams.",
+      "Assisted in debugging UI and API integration issues across complex distributed systems.",
+    ],
+    platformReliability: [
+      "Supported CI/CD processes and collaborated on frontend deployment workflows.",
+    ],
+    collaboration: [
+      "Worked in Agile teams with engineers across Europe, India, and the US to deliver stable releases.",
+    ],
+    technologies: ["JavaScript", "TypeScript", "React (exposure)", "Node.js", "AWS", "Jenkins", "REST APIs"],
   },
   {
-    title: "Design System & Component Library",
-    company: "HealthTech Solutions",
-    year: "2021",
-    problem: "Six product teams building inconsistent UIs. Accessibility issues across products. Design-to-development handoff taking weeks instead of days.",
-    constraints: "Must support React and Vue teams, needed buy-in from skeptical stakeholders, zero dedicated design system budget initially.",
-    role: "Championed the initiative from proof-of-concept to adoption. Built the core component library. Created documentation and contribution guidelines. Trained teams on usage.",
-    outcome: "Adopted by all 6 teams within 6 months. Reduced new feature UI development time by 60%. Achieved WCAG 2.1 AA compliance across all products.",
-    technologies: ["React", "Vue", "Storybook", "Styled Components", "Jest", "Chromatic"],
+    company: "Self-Employed",
+    location: "Szeged, Hungary",
+    role: "Full-Stack Web Developer",
+    period: "Nov 2015 – Jan 2016",
+    summary: "Built websites and small web applications for gaming and travel SMEs.",
+    frontendEngineering: [
+      "Implemented responsive UI, API integrations, and performance optimizations.",
+      "Managed hosting, deployments, and client communication.",
+    ],
+    platformReliability: [],
+    collaboration: [],
+    technologies: ["JavaScript", "HTML/CSS", "PHP", "WordPress", "jQuery"],
+  },
+  {
+    company: "S-Press 5 Ltd",
+    location: "Szeged, Hungary",
+    role: "Front-End Developer",
+    period: "Mar 2015 – Nov 2015",
+    summary: "Developed UI features and improved frontend performance for production websites.",
+    frontendEngineering: [
+      "Worked with designers to implement layouts and optimize rendering.",
+      "Assisted with deployments and testing cycles.",
+    ],
+    platformReliability: [],
+    collaboration: [],
+    technologies: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
   },
 ];
+
+const experienceToStudy = (experience: (typeof experiences)[number]) => ({
+  title: experience.role,
+  company: `${experience.company} · ${experience.location}`,
+  year: experience.period,
+  problem: experience.summary,
+  constraints: experience.platformReliability.length
+    ? experience.platformReliability.join(" ")
+    : "Focused on delivering reliable, high-quality user-facing features.",
+  role: [
+    ...experience.frontendEngineering,
+    ...experience.collaboration,
+  ].join(" "),
+  outcome:
+    "Delivered reliable, high-quality frontend features with strong collaboration and operational awareness.",
+  technologies: experience.technologies,
+});
 
 export function WorkSection() {
   return (
@@ -40,18 +107,18 @@ export function WorkSection() {
       <div className="container mx-auto max-w-5xl">
         <FadeInSection>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-foreground">
-            Selected Work
+            Professional Experience
           </h2>
           <p className="text-muted-foreground mb-12 max-w-2xl">
-            A few projects that represent the kind of problems I enjoy solving. 
-            Each involved significant technical and organizational complexity.
+            Roles focused on production support, incident management, and improving
+            reliability for cloud-based platforms.
           </p>
         </FadeInSection>
         
         <div className="space-y-4">
-          {caseStudies.map((study, index) => (
-            <FadeInSection key={study.title} delay={index * 100}>
-              <CaseStudyCard study={study} />
+          {experiences.map((experience, index) => (
+            <FadeInSection key={experience.company + experience.period} delay={index * 100}>
+              <CaseStudyCard study={experienceToStudy(experience)} />
             </FadeInSection>
           ))}
         </div>

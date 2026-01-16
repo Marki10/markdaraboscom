@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, FileText } from "lucide-react";
+import { Github, Linkedin, Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FadeInSection } from "./FadeInSection";
 
@@ -11,24 +11,24 @@ export function ContactSection() {
             Get in Touch
           </h2>
           <p className="text-muted-foreground mb-12 max-w-2xl">
-            I'm currently open to new opportunities. Whether you have a role in mind, 
-            want to discuss a project, or just want to connect—I'd love to hear from you.
+            I’m open to opportunities in frontend engineering, UI development, and platform-focused product work.
+            If you'd like to discuss a role, a project, or a collaboration, feel free to reach out.
           </p>
         </FadeInSection>
         
         <FadeInSection delay={100}>
           <div className="flex flex-wrap gap-4 mb-16">
             <Button asChild size="lg" className="gap-2">
-              <a href="mailto:hello@johndoe.dev">
+              <a href="mailto:markdarabos@gmail.com">
                 <Mail className="h-4 w-4" />
-                hello@johndoe.dev
+                markdarabos@gmail.com
               </a>
             </Button>
             
             <Button asChild variant="outline" size="lg" className="gap-2">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <FileText className="h-4 w-4" />
-                Download Resume
+              <a href="tel:+447432659979">
+                <Phone className="h-4 w-4" />
+                +44 7432 659 979
               </a>
             </Button>
           </div>
@@ -37,7 +37,7 @@ export function ContactSection() {
         <FadeInSection delay={200}>
           <div className="flex items-center gap-6">
             <a
-              href="https://github.com"
+              href="https://github.com/Marki10"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
@@ -46,7 +46,7 @@ export function ContactSection() {
               <Github className="h-6 w-6" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/darabos-mark"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"

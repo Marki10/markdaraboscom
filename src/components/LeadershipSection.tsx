@@ -3,20 +3,20 @@ import { FadeInSection } from "./FadeInSection";
 export function LeadershipSection() {
   const experiences = [
     {
-      title: "Mentoring & Growth",
-      description: "Mentored 15+ developers across career levels. Designed structured onboarding programs that reduced ramp-up time from 3 months to 6 weeks.",
+      title: "Production Reliability & Debugging",
+      description: "Handled on-call support for high-traffic systems, diagnosing UI and API issues under pressure and reducing time-to-recovery.",
     },
     {
-      title: "Code Review Philosophy",
-      description: "Advocate for reviews as teaching moments, not gatekeeping. Focus on why over what. Established async review practices that improved team velocity by 25%.",
+      title: "Performance & Monitoring",
+      description: "Improved monitoring, alerting, and debugging workflows — enabling faster identification of frontend bottlenecks and production regressions.",
     },
     {
-      title: "Cross-team Collaboration",
-      description: "Led technical alignment across product, design, and platform teams. Facilitated architecture decision records (ADRs) to document and share technical decisions.",
+      title: "Release & Quality Readiness",
+      description: "Supported release cycles with regression testing, feature validation, and launch preparation for enterprise-scale applications.",
     },
     {
-      title: "Hiring & Team Building",
-      description: "Conducted 100+ technical interviews. Developed structured interview rubrics focused on problem-solving approach rather than trivia knowledge.",
+      title: "Team Collaboration & Mentorship",
+      description: "Worked closely with designers, backend engineers, and product teams across global time zones; mentored junior engineers on best practices and workflows.",
     },
   ];
 
@@ -25,10 +25,10 @@ export function LeadershipSection() {
       <div className="container mx-auto max-w-5xl">
         <FadeInSection>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-foreground">
-            Leadership & Collaboration
+            Engineering Excellence & Collaboration
           </h2>
           <p className="text-muted-foreground mb-12 max-w-2xl">
-            Senior engineering is about more than code. Here's how I contribute to teams and organizations beyond individual features.
+            I combine strong frontend engineering with operational awareness to help teams ship fast, reliable, high-quality products.
           </p>
         </FadeInSection>
         

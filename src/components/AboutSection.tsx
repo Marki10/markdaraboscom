@@ -14,26 +14,26 @@ export function AboutSection() {
           <div className="md:col-span-2 space-y-6">
             <FadeInSection delay={100}>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a senior web developer with over a decade of experience building for the web. 
-                I've worked across startups, scale-ups, and enterprise environments—from 
-                greenfield projects to complex legacy migrations.
+                I'm a frontend-focused engineer with over a decade of experience building and supporting
+                high-availability, user-facing platforms. My background spans React, TypeScript, scalable
+                UI engineering, and the operational discipline needed to ship reliable features at scale.
               </p>
             </FadeInSection>
             
             <FadeInSection delay={200}>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                My approach centers on making informed trade-offs. I believe great software 
-                comes from understanding constraints deeply—whether they're technical debt, 
-                team capacity, or business timelines. I care about code that's maintainable 
-                in two years, not just code that ships today.
+                I’ve worked across the full lifecycle — from designing and developing intuitive interfaces,
+                to improving performance and debugging complex production issues in high-traffic environments.
+                I enjoy turning data into clear, meaningful visual experiences and building frontend systems
+                that are maintainable and resilient.
               </p>
             </FadeInSection>
             
             <FadeInSection delay={300}>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Beyond individual contribution, I invest heavily in mentorship and team 
-                growth. I've led technical initiatives, established code review practices, 
-                and helped shape engineering culture at multiple organizations.
+                I collaborate well across global teams and have mentored junior engineers to help them grow.
+                My goal is to create fast, accessible, well-structured applications while supporting the
+                operational stability teams need to ship with confidence.
               </p>
             </FadeInSection>
           </div>
@@ -49,13 +49,20 @@ export function AboutSection() {
               
               <div>
                 <h3 className="text-sm uppercase tracking-wide text-muted-foreground mb-3">
-                  Domains
+                  Location
+                </h3>
+                <p className="text-foreground font-medium">Bathgate, Scotland</p>
+              </div>
+              
+              <div>
+                <h3 className="text-sm uppercase tracking-wide text-muted-foreground mb-3">
+                  Focus
                 </h3>
                 <ul className="space-y-1 text-foreground">
-                  <li>E-commerce</li>
-                  <li>FinTech</li>
-                  <li>SaaS Platforms</li>
-                  <li>Healthcare</li>
+                  <li>Frontend engineering</li>
+                  <li>React & TypeScript</li>
+                  <li>UI architecture & performance</li>
+                  <li>Data-driven interfaces</li>
                 </ul>
               </div>
               
