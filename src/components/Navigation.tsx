@@ -1,17 +1,19 @@
 import { ThemeToggle } from "./ThemeToggle";
 
 const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#work", label: "Work" },
-  { href: "#skills", label: "Skills" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#about", label: "About" },
+  { href: "/#work", label: "Work" },
+  { href: "/#skills", label: "Skills" },
+  { href: "/projects", label: "Projects" },
+  { href: "/snippets", label: "Snippets" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export function Navigation() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
       <nav className="container mx-auto px-6 h-16 flex items-center justify-between max-w-5xl">
-        <a href="#" className="font-semibold text-lg tracking-tight text-foreground">
+        <a href="/" className="font-semibold text-lg tracking-tight text-foreground">
           MD
         </a>
         
