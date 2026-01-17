@@ -35,7 +35,7 @@ export function HeroSection() {
             {["React", "TypeScript", "UI Architecture", "Performance", "Testing", "AWS", "Reliability"].map((tag) => (
               <span
                 key={tag}
-                className="px-3 py-1.5 text-sm border border-border rounded-full text-muted-foreground bg-background/80 backdrop-blur-sm"
+                className="px-3 py-1.5 text-sm border border-accent-cool rounded-full text-foreground bg-accent-cool-soft backdrop-blur-sm"
               >
                 {tag}
               </span>

@@ -8,7 +8,7 @@ export default function Projects() {
     <PageLayout>
       <div className="container mx-auto max-w-6xl space-y-10">
         <header className="space-y-3">
-          <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
+          <p className="text-xs uppercase tracking-[0.3em] text-accent-cool">
             Projects
           </p>
           <h1 className="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">

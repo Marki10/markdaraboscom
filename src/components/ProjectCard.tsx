@@ -26,7 +26,7 @@ export function ProjectCard({
           {tech.map((item) => (
             <span
               key={item}
-              className="rounded-full border border-border bg-secondary/40 px-3 py-1 text-xs font-medium text-foreground"
+              className="rounded-full border border-accent-cool bg-accent-cool-soft px-3 py-1 text-xs font-medium text-foreground"
             >
               {item}
             </span>
@@ -37,7 +37,7 @@ export function ProjectCard({
       <ul className="mt-5 space-y-2 text-sm text-muted-foreground">
         {bullets.map((bullet) => (
           <li key={bullet} className="flex items-start gap-2">
-            <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary/70" />
+            <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-accent-cool" />
             <span>{bullet}</span>
           </li>
         ))}
@@ -46,14 +46,21 @@ export function ProjectCard({
       {(githubUrl || demoUrl) && (
         <div className="mt-6 flex flex-wrap gap-3">
           {githubUrl && (
-            <Button asChild variant="outline">
+            <Button
+              asChild
+              variant="outline"
+              className="border-accent-cool text-foreground hover:bg-accent-cool-soft"
+            >
               <a href={githubUrl} target="_blank" rel="noreferrer">
                 GitHub
               </a>
             </Button>
           )}
           {demoUrl && (
-            <Button asChild>
+            <Button
+              asChild
+              className="bg-accent-cool text-accent-cool-foreground hover:bg-accent-cool/90"
+            >
               <a href={demoUrl} target="_blank" rel="noreferrer">
                 Demo
               </a>

@@ -120,7 +120,7 @@ export function SkillsSection() {
                   {group.items.map((item) => (
                     <span
                       key={item}
-                      className="px-4 py-2 border border-border rounded-lg text-foreground"
+                    className="px-4 py-2 border border-accent-cool rounded-lg text-foreground bg-accent-cool-soft"
                     >
                       {item}
                     </span>

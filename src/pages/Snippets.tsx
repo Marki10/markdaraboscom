@@ -16,7 +16,7 @@ export default function Snippets() {
     <PageLayout>
       <div className="container mx-auto max-w-6xl space-y-10">
         <header className="space-y-3">
-          <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
+          <p className="text-xs uppercase tracking-[0.3em] text-accent-cool">
             Code Snippets Library
           </p>
           <h1 className="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
@@ -38,8 +38,8 @@ export default function Snippets() {
                   onClick={() => setSelected(category.name)}
                   className={`w-full rounded-lg border px-4 py-2 text-left text-sm transition-colors ${
                     isActive
-                      ? "border-primary/60 bg-primary/10 text-foreground"
-                      : "border-border text-muted-foreground hover:text-foreground"
+                      ? "border-accent-cool bg-accent-cool-soft text-foreground"
+                      : "border-border text-muted-foreground hover:text-accent-cool"
                   }`}
                 >
                   {category.name}

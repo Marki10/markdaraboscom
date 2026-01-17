@@ -40,7 +40,7 @@ export function ContactSection() {
               href="https://github.com/Marki10"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-foreground transition-colors"
+              className="rounded-full border border-accent-cool bg-accent-cool-soft p-2 text-accent-cool transition-colors hover:bg-accent-cool/15"
               aria-label="GitHub"
             >
               <Github className="h-6 w-6" />
@@ -49,7 +49,7 @@ export function ContactSection() {
               href="https://linkedin.com/in/darabos-mark"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-foreground transition-colors"
+              className="rounded-full border border-accent-cool bg-accent-cool-soft p-2 text-accent-cool transition-colors hover:bg-accent-cool/15"
               aria-label="LinkedIn"
             >
               <Linkedin className="h-6 w-6" />
