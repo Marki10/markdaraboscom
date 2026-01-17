@@ -9,7 +9,7 @@ export function PageLayout({ children }: PageLayoutProps) {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navigation />
-      <main className="px-6 pb-16 pt-24">{children}</main>
+      <main className="px-2 pb-16 pt-[74px] sm:px-6 sm:pt-24">{children}</main>
     </div>
   );
 }

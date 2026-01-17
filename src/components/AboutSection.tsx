@@ -2,7 +2,7 @@ import { FadeInSection } from "./FadeInSection";
 
 export function AboutSection() {
   return (
-    <section id="about" className="py-24 px-6 border-t border-border">
+    <section id="about" className="py-24 px-2 sm:px-6 border-t border-border">
       <div className="container mx-auto max-w-5xl">
         <FadeInSection>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-12 text-foreground">

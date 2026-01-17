@@ -29,9 +29,9 @@ export function CaseStudyCard({ study }: CaseStudyCardProps) {
         className="w-full p-6 md:p-8 text-left flex items-start justify-between gap-4"
       >
         <div>
-          <div className="flex items-center gap-3 mb-2">
+          <div className="flex flex-col gap-1 mb-2 sm:flex-row sm:items-center sm:gap-3">
             <span className="text-sm text-muted-foreground">{study.year}</span>
-            <span className="text-muted-foreground/50">•</span>
+            <span className="hidden text-muted-foreground/50 sm:inline">•</span>
             <span className="text-sm text-muted-foreground">{study.company}</span>
           </div>
           <h3 className="text-xl md:text-2xl font-semibold text-foreground">

@@ -4,7 +4,7 @@ import { FadeInSection } from "./FadeInSection";
 
 export function ContactSection() {
   return (
-    <section id="contact" className="py-24 px-6 border-t border-border">
+    <section id="contact" className="py-24 px-2 sm:px-6 border-t border-border">
       <div className="container mx-auto max-w-5xl">
         <FadeInSection>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-foreground">

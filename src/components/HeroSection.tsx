@@ -4,7 +4,7 @@ import { InteractiveCanvas } from "./InteractiveCanvas";
 
 export function HeroSection() {
   return (
-    <section className="min-h-screen flex flex-col justify-center pt-16 pb-24 px-6 relative overflow-hidden">
+    <section className="min-h-screen flex flex-col justify-center pt-[74px] pb-24 px-2 sm:px-6 sm:pt-16 relative overflow-hidden">
       {/* Interactive background */}
       <div className="absolute inset-0">
         <InteractiveCanvas />

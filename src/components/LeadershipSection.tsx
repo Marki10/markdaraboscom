@@ -3,7 +3,7 @@ import { leadershipExperiences } from "@/data/leadership";
 
 export function LeadershipSection() {
   return (
-    <section className="py-24 px-6 border-t border-border">
+    <section className="py-24 px-2 sm:px-6 border-t border-border">
       <div className="container mx-auto max-w-5xl">
         <FadeInSection>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-foreground">
