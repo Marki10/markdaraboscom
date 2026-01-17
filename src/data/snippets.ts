@@ -11,6 +11,43 @@ export type Category = {
 
 export const snippetCategories: Category[] = [
   {
+    name: "Converters & Calculators",
+    snippets: [
+      {
+        title: "Unit Converter (length, weight, temperature)",
+        description:
+          "Converts common length, weight, and temperature units with a simple API.",
+        code: `type LengthUnit = "m" | "km" | "mi" | "ft";
+type WeightUnit = "kg" | "lb";
+type TempUnit = "c" | "f" | "k";
+
+export const convertLength = (value: number, from: LengthUnit, to: LengthUnit) => {
+  const meters: Record<LengthUnit, number> = { m: 1, km: 1000, mi: 1609.34, ft: 0.3048 };
+  return (value * meters[from]) / meters[to];
+};
+
+export const convertWeight = (value: number, from: WeightUnit, to: WeightUnit) => {
+  const kilograms: Record<WeightUnit, number> = { kg: 1, lb: 0.453592 };
+  return (value * kilograms[from]) / kilograms[to];
+};
+
+export const convertTemperature = (value: number, from: TempUnit, to: TempUnit) => {
+  if (from === to) return value;
+  const toCelsius = (v: number, unit: TempUnit) =>
+    unit === "c" ? v : unit === "f" ? (v - 32) * (5 / 9) : v - 273.15;
+  const fromCelsius = (v: number, unit: TempUnit) =>
+    unit === "c" ? v : unit === "f" ? v * (9 / 5) + 32 : v + 273.15;
+  return fromCelsius(toCelsius(value, from), to);
+};
+
+// Example results:
+// convertLength(5, "km", "mi") -> 3.1069
+// convertWeight(150, "lb", "kg") -> 68.0389
+// convertTemperature(72, "f", "c") -> 22.2222`,
+      },
+    ],
+  },
+  {
     name: "React Hooks",
     snippets: [
       {
